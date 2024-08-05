@@ -101,7 +101,7 @@ app.patch('/movies/:id', (req, res) => {
   if (movieIndex === -1) {
     return res.status(404).json({ message: 'Movie not found' })
   }
-
+    
   const updateMovie = {
     ...movies[movieIndex],
     ...result.data
